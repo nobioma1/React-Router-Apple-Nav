@@ -1,12 +1,16 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import SubNav from './Components/SubNav';
+import NavWrapper from './Components/NavWrapper';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      
-    </div>
+    <Router>
+      <div className="App" />
+      <NavWrapper />
+      <Route path="/:product" component={SubNav} />
+    </Router>
   );
-}
+};
 
 export default App;
