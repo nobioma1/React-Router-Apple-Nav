@@ -49,7 +49,7 @@ class NavWrapper extends React.Component {
             hoverColor="gray"
           />
         ))}
-        <Link to="/">Support</Link>
+        <Link to="/support">Support</Link>
         <FiSearch />
         <FiShoppingBag />
       </NavWrapperContainer>
